@@ -1,0 +1,2 @@
+execute if score $i suso.pldata.var = @s suso.pldata.id run data modify storage suso:pldata working_data set from storage suso:pldata working_arr[0]
+execute unless score $i suso.pldata.var = @s suso.pldata.id run function suso.player_data:get/search_player2

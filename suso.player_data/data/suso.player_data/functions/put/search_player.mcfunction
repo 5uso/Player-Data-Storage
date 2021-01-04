@@ -1,0 +1,2 @@
+execute if score $i suso.pldata.var = @s suso.pldata.id run function suso.player_data:put/found_player
+execute unless score $i suso.pldata.var = @s suso.pldata.id run function suso.player_data:put/search_player2
