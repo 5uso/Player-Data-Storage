@@ -9,7 +9,7 @@ Automatically handles player name changes.
 ## How to use
 Execute `function suso.player_data:get/do` as the player whose data you want to get. This will result in that player's data being copied to path `storage suso:pldata working_data`.
 
-After editing the data, the result contained in this path can be saved by running `function suso.player_data:get/do`, again, as the player in question.
+After editing the data, the result contained in this path can be saved by running `function suso.player_data:put/do`, again, as the player in question.
 
 Every player's data starts off as a blank nbt object (`{}`).
 
