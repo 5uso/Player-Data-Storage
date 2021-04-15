@@ -5,13 +5,17 @@ Designed for use in multiplayer maps/datapacks.
 
 Automatically handles player name changes.
 
+Handles up to 32 players.
+
 
 ## How to use
 Execute `function suso.player_data:get/do` as the player whose data you want to get. This will result in that player's data being copied to path `storage suso:pldata working_data`.
 
-After editing the data, the result contained in this path can be saved by running `function suso.player_data:put/do`, again, as the player in question.
+After editing the data, the result contained in this path can be saved by running `function suso.player_data:put/do`, again, as the player in question. If the data wasn't edited (read only operations), there's no need to run this function.
 
 Every player's data starts off as a blank nbt object (`{}`).
+
+If used on a world that's going to be distributed, run `function suso.player_data:package` to reset the pack. This will pause it until the next reload.
 
 
 ## Example
