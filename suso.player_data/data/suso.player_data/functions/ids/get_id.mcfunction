@@ -3,7 +3,8 @@ scoreboard players add #current suso.pldata.id 1
 scoreboard players operation @s suso.pldata.id = #current suso.pldata.id
 
 #Data starts off as a blank nbt object
-data modify storage suso:pldata player_arr append value {}
+data modify storage suso:pldata working_data set value {}
+function suso.player_data:put/do
 
 #Name change handling
 data modify storage suso:pldata new_id.UUID set from entity @s UUID
