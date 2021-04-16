@@ -1,6 +1,6 @@
- {
-       "pack": {
-           "pack_format": 6,
-           "description": "Suso's utility datapack for handling player data in storages."
-       }
-   }
+{
+    "pack": {
+        "pack_format": 6,
+        "description": "§bSuso's utility datapack for handling player data in storages: §3§ngithub.com/5uso/Player-Data-Storage"
+    }
+}
