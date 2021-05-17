@@ -5,3 +5,6 @@ execute as @a[scores={suso.pldata.id=0}] run tag @s remove suso.pldata.id
 
 #Recover id on name change
 execute as @a[tag=suso.pldata.id] unless score @s suso.pldata.id matches 1.. run function suso.player_data:ids/recover_id
+
+#Run external function tag
+execute as @a at @s run function #suso.player_data:player_tick
