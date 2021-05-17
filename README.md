@@ -17,7 +17,7 @@ Every player's data starts off as a blank nbt object (`{}`).
 
 If used on a world that's going to be distributed, run `function suso.player_data:package` to reset the pack. This will pause it until the next reload.
 
-Accessing the same player's data multiple times in a row is faster than when switching between players. When possible, this should be taken into account to optimize usage.
+Accessing the same player's data multiple times in a row is faster than when switching between players. When possible, this should be taken into account to optimize usage. For this reason, functions may be tagged under `#suso.player_data:player_tick` to be run each tick per player, grouping player data operations.
 
 
 ## Example
