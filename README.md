@@ -39,3 +39,9 @@ data modify storage suso:pldata working_data.held set from entity @s SelectedIte
 function suso.player_data:put/do
 ```
 In this case, running `execute as @p run function test:example` would increase a counter inside the nearest player's data, as well as storing their held item.
+
+## Crediting
+This library is licensed under the [Apache License 2.0](https://github.com/5uso/Player-Data-Storage/blob/main/LICENSE). When using it as part of  your own projects, you must:
+
+- Include [crediting for the library](https://github.com/5uso/Player-Data-Storage/blob/main/NOTICE) in a way visible to players. This probably fits best into the credits section of your map/datapack in-game, but in case that's impossible it may be done within a text file or documentation distributed with the project.
+- Include a copy of the [license](https://github.com/5uso/Player-Data-Storage/blob/main/LICENSE).
